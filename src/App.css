@@ -36,3 +36,70 @@
     transform: rotate(360deg);
   }
 }
+.date-ribbon-container {
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.scroll-area {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.date-items-container {
+  display: flex;
+  position: relative;
+  height: 120px;
+}
+
+.date-item {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  user-select: none;
+}
+
+.date-item .date-month,
+.date-item .date-year {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.date-item .date-day {
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.date-item.between {
+  background-color: #1c7ed6;
+  border: 1px solid #1c7ed6;
+  color: #fff;
+}
+
+.date-item.not-between {
+  background-color: #f1f3f5;
+  border: 1px solid #dee2e6;
+  color: #000;
+}
+
+.marker-left {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 120px;
+  background: #868e96;
+  cursor: grab;
+  z-index: 10;
+}
+.marker-right {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 120px;
+  background: #868e96;
+  cursor: grab;
+  z-index: 10;
+}
